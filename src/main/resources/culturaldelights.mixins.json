@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.sterner.culturaldelights.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "SimpleBlockStateProviderAccessor",
+    "TreeDecoratorTypeInvoker"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

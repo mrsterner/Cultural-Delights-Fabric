@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "culturaldelights:smoked_corn"
+    },
+    {
+      "tag": "forge:milk"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "item": "culturaldelights:elote",
+    "count": 1
+  }
+}

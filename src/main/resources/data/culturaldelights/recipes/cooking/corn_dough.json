@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cooking",
+  "ingredients": [
+    {
+      "tag": "forge:crops/corn"
+    },
+    {
+      "tag": "forge:crops/corn"
+    },
+    {
+      "tag": "forge:crops/corn"
+    }
+  ],
+  "result": {
+    "item": "culturaldelights:corn_dough",
+    "count": 3
+  },
+  "experience": 0.2,
+  "cookingtime": 200
+}
