@@ -5,10 +5,10 @@
       "item": "culturaldelights:tortilla"
     },
     {
-      "tag": "forge:cooked_chicken"
+      "tag": "c:cooked_chicken"
     },
     {
-      "tag": "forge:crops/onion"
+      "tag": "c:crops/onion"
     },
     {
       "item": "farmersdelight:tomato_sauce"
@@ -17,7 +17,7 @@
       "tag": "culturaldelights:cucumbers"
     },
     {
-      "tag": "forge:crops/corn"
+      "tag": "c:crops/corn"
     }
   ],
   "result": {

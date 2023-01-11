@@ -5,13 +5,13 @@
       "item": "culturaldelights:tortilla"
     },
     {
-      "tag": "forge:cooked_pork"
+      "tag": "c:cooked_pork"
     },
     {
       "item": "minecraft:apple"
     },
     {
-      "tag": "forge:salad_ingredients"
+      "tag": "c:salad_ingredients"
     }
   ],
   "result": {

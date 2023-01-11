@@ -5,13 +5,13 @@
       "item": "minecraft:water_bucket"
     },
     {
-      "tag": "forge:crops/corn"
+      "tag": "c:crops/corn"
     },
     {
-      "tag": "forge:crops/corn"
+      "tag": "c:crops/corn"
     },
     {
-      "tag": "forge:crops/corn"
+      "tag": "c:crops/corn"
     }
   ],
   "result": {

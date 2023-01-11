@@ -5,13 +5,13 @@
       "item": "culturaldelights:tortilla"
     },
     {
-      "tag": "forge:cooked_fishes"
+      "tag": "c:cooked_fishes"
     },
     {
-      "tag": "forge:crops/tomato"
+      "tag": "c:crops/tomato"
     },
     {
-      "tag": "forge:salad_ingredients"
+      "tag": "c:salad_ingredients"
     }
   ],
   "result": {

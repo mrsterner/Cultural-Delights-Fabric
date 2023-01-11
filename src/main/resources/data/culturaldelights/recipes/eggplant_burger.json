@@ -8,10 +8,10 @@
       "tag": "culturaldelights:smoked_regular_eggplants"
     },
     {
-      "tag": "forge:salad_ingredients"
+      "tag": "c:salad_ingredients"
     },
     {
-      "tag": "forge:crops/tomato"
+      "tag": "c:crops/tomato"
     }
   ],
   "result": {
