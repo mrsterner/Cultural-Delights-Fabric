@@ -22,7 +22,7 @@ import java.util.function.Supplier;
 
 public class ExoticRollMedleyBlock extends FeastBlock {
     public static final IntProperty ROLL_SERVINGS = IntProperty.of("servings", 0, 8);
-    protected static final VoxelShape PLATE_SHAPE = VoxelShapes.cuboid(1.0, 0.0, 1.0, 15.0, 2.0, 15.0);
+    protected static final VoxelShape PLATE_SHAPE = Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 2.0, 15.0);
     protected static final VoxelShape FOOD_SHAPE;
     public final List<Item> riceRollServings;
 
