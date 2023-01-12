@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+	"#c:vegetables/avocado",
+	"#c:vegetables/cucumber",
+	"#c:vegetables/eggplant",
+	"#c:vegetables/white_eggplant"
+  ]
+}

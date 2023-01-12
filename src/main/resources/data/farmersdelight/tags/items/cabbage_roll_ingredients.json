@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#c:raw_squids",
+	"#c:cooked_squids",
+	"#culturaldelights:avocados",
+	"#culturaldelights:regular_eggplants"
+  ]
+}

@@ -2,6 +2,11 @@
   "replace": false,
   "values": [
     "culturaldelights:avocado_wood",
-    "culturaldelights:avocado_log"
+    "culturaldelights:avocado_log",
+	"culturaldelights:avocado_crate",
+	"culturaldelights:cucumber_crate",
+	"culturaldelights:pickle_crate",
+	"culturaldelights:corn_cob_crate",
+	"culturaldelights:eggplant_crate"
   ]
 }
