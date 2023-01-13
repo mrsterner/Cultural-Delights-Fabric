@@ -66,6 +66,6 @@ public class ExoticRollMedleyBlock extends FeastBlock {
 
 
     static {
-        FOOD_SHAPE = VoxelShapes.combine(PLATE_SHAPE, VoxelShapes.cuboid(2.0, 2.0, 2.0, 14.0, 4.0, 14.0), BooleanBiFunction.OR);
+        FOOD_SHAPE = VoxelShapes.combine(PLATE_SHAPE, Block.createCuboidShape(2.0, 2.0, 2.0, 14.0, 4.0, 14.0), BooleanBiFunction.OR);
     }
 }
