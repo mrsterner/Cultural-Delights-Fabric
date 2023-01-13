@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create"]
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "culturaldelights:wild_cucumbers"
+    }
+  ],
+  "results": [
+    {
+      "item": "yellow_dye",
+      "count": 2
+    },
+    {
+      "item": "culturaldelights:cucumber_seeds",
+      "count": 1
+    },
+    {
+      "item": "yellow_dye",
+	  "chance": 0.2,
+      "count": 1
+    }
+  ],
+  "processingTime": 50
+}

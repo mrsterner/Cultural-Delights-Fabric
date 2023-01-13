@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create"]
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "culturaldelights:wild_corn"
+    }
+  ],
+  "results": [
+    {
+      "item": "culturaldelights:corn_kernels",
+      "count": 2
+    },
+    {
+      "item": "culturaldelights:corn_kernels",
+	  "chance": 0.5,
+      "count": 2
+    },
+    {
+      "item": "green_dye",
+	  "chance": 0.1,
+      "count": 1
+    }
+  ],
+  "processingTime": 50
+}
