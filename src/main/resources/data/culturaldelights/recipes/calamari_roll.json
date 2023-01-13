@@ -8,10 +8,10 @@
       "item": "farmersdelight:cooked_rice"
     },
     {
-      "item": "culturaldelights:raw_calamari"
+      "tag": "c:calamari"
     },
     {
-      "item": "culturaldelights:raw_calamari"
+      "tag": "c:calamari"
     }
   ],
   "result": {

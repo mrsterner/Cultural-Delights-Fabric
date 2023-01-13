@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "culturaldelights:avocado",
+    "#c:fruits/avocado",
     "culturaldelights:cut_avocado"
   ]
 }
