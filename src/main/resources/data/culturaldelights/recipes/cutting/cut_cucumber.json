@@ -2,7 +2,7 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "culturaldelights:cucumber"
+      "tag": "c:vegetables/cucumber"
     }
   ],
   "tool": {

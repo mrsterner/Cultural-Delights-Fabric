@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "culturaldelights:tortilla"
+      "tag": "c:tortillas"
     },
     {
       "tag": "c:cooked_chicken"
