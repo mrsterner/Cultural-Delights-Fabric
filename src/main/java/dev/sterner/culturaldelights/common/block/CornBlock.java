@@ -27,11 +27,11 @@ public class CornBlock extends PlantBlock implements Fertilizable {
     public static final BooleanProperty SUPPORTING;
     private static final VoxelShape[] SHAPE_BY_AGE;
     
-    public static final int GROWTH_CHANCE;
+    public static final int GROWTH_CHANCE = 10;
 
     public CornBlock(Settings settings) {
         super(settings);
-        this.setDefaultState(this.getDefaultState().with(AGE, 0).with(SUPPORTING, false).with(GROWTH_CHANCE, 10));
+        this.setDefaultState(this.getDefaultState().with(AGE, 0).with(SUPPORTING, false));
     }
 
     @Override
