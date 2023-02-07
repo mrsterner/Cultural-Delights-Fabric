@@ -26,10 +26,12 @@ public class CornBlock extends PlantBlock implements Fertilizable {
     public static final IntProperty AGE;
     public static final BooleanProperty SUPPORTING;
     private static final VoxelShape[] SHAPE_BY_AGE;
+    
+    public static final int GROWTH_CHANCE;
 
     public CornBlock(Settings settings) {
         super(settings);
-        this.setDefaultState(this.getDefaultState().with(AGE, 0).with(SUPPORTING, false));
+        this.setDefaultState(this.getDefaultState().with(AGE, 0).with(SUPPORTING, false).with(GROWTH_CHANCE, 10));
     }
 
     @Override
@@ -131,6 +133,33 @@ public class CornBlock extends PlantBlock implements Fertilizable {
             }
         }
 
+    }
+    
+    @Override
+    public void randomTick(BlockState state, ServerWorld worldIn, BlockPos pos, Random rand) {
+        super.randomTick(state, worldIn, pos, rand);
+
+        if (!world.isRegionLoaded(pos.add(-1, -1, -1), pos.add(1, 1, 1))) {
+            return;
+        }
+
+        if (world.getLightLevel(pos.up(), 0) >= 6 && this.getAge(state) <= this.getMaxAge() && rand.nextInt(3) == 0) {
+            randomGrowTick(state, worldIn, pos, rand);
+        }
+    }
+
+    private void randomGrowTick(BlockState state, ServerWorld worldIn, BlockPos pos, Random rand) {
+        int currentAge = this.getAge(state);
+        if (currentAge <= this.getMaxAge() && rand.nextInt((int) (25.0F / GROWTH_CHANCE) + 1) == 0) {
+            if (currentAge == this.getMaxAge()) {
+                CornUpperBlock cornUpper = (CornUpperBlock) CDObjects.CORN_UPPER;
+                if (cornUpper.getDefaultState().canPlaceAt(world, pos.up()) && world.isAir(pos.up())) {
+                    world.setBlockState(pos.up(), cornUpper.getDefaultState());
+                }
+            } else {
+                worldIn.setBlockState(pos, state.with(AGE, this.getAge()+1));
+            }
+        }
     }
 
     static {
