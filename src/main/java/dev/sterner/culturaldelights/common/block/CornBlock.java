@@ -157,7 +157,7 @@ public class CornBlock extends PlantBlock implements Fertilizable {
                     worldIn.setBlockState(pos.up(), cornUpper.getDefaultState());
                 }
             } else {
-                worldIn.setBlockState(pos, state.with(AGE, this.getAge()+1));
+                worldIn.setBlockState(pos, state.with(AGE, this.getAge(state)+1));
             }
         }
     }
