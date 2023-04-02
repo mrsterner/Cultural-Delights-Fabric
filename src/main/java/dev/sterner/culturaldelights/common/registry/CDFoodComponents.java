@@ -53,7 +53,8 @@ public class CDFoodComponents {
     public static final FoodComponent BEEF_BURRITO = (new FoodComponent.Builder()).hunger(14).saturationModifier(0.7F).build();
     public static final FoodComponent MUTTON_SANDWICH = (new FoodComponent.Builder()).hunger(10).saturationModifier(0.8F).build();
     public static final FoodComponent AVOCADO_TOAST = (new FoodComponent.Builder()).hunger(4).saturationModifier(0.5F).build();
-    public static final FoodComponent CREAMED_CORN = (new FoodComponent.Builder()).hunger(6).saturationModifier(0.8F).build();
+    public static final FoodComponent CREAMED_CORN = (new FoodComponent.Builder()).hunger(6).saturationModifier(0.8F)
+            .recipeRemainder(Items.BOWL).build();
     public static final FoodComponent CHICKEN_TACO = (new FoodComponent.Builder()).hunger(10).saturationModifier(0.8F).build();
     public static final FoodComponent PORK_WRAP = (new FoodComponent.Builder()).hunger(10).saturationModifier(0.8F).build();
     public static final FoodComponent FISH_TACO = (new FoodComponent.Builder()).hunger(10).saturationModifier(0.8F).build();
@@ -61,8 +62,10 @@ public class CDFoodComponents {
             .statusEffect(new StatusEffectInstance(EffectsRegistry.NOURISHMENT.get(), ConsumableItem.LONG_DURATION, 0), 1.0F)
             .recipeRemainder(Items.BOWL).build();
     public static final FoodComponent FRIED_EGGPLANT_PASTA = (new FoodComponent.Builder()).hunger(12).saturationModifier(0.9F)
-            .statusEffect(new StatusEffectInstance(EffectsRegistry.NOURISHMENT.get(), ConsumableItem.LONG_DURATION, 0), 1.0F).build();
+            .statusEffect(new StatusEffectInstance(EffectsRegistry.NOURISHMENT.get(), ConsumableItem.LONG_DURATION, 0), 1.0F)
+            .recipeRemainder(Items.BOWL).build();
     public static final FoodComponent EGGPLANT_BURGER = (new FoodComponent.Builder()).hunger(12).saturationModifier(0.7F).build();
     public static final FoodComponent SPICY_CURRY = (new FoodComponent.Builder()).hunger(12).saturationModifier(1.3F)
-            .statusEffect(new StatusEffectInstance(EffectsRegistry.NOURISHMENT.get(), ConsumableItem.LONG_DURATION, 0), 1.0F).build();
+            .statusEffect(new StatusEffectInstance(EffectsRegistry.NOURISHMENT.get(), ConsumableItem.LONG_DURATION, 0), 1.0F)
+            .recipeRemainder(Items.BOWL).build();
 }
