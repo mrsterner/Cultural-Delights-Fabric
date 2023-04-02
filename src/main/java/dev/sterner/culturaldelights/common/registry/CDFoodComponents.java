@@ -58,7 +58,8 @@ public class CDFoodComponents {
     public static final FoodComponent PORK_WRAP = (new FoodComponent.Builder()).hunger(10).saturationModifier(0.8F).build();
     public static final FoodComponent FISH_TACO = (new FoodComponent.Builder()).hunger(10).saturationModifier(0.8F).build();
     public static final FoodComponent HEARTY_SALAD = (new FoodComponent.Builder()).hunger(7).saturationModifier(0.7F)
-            .statusEffect(new StatusEffectInstance(EffectsRegistry.NOURISHMENT.get(), ConsumableItem.LONG_DURATION, 0), 1.0F).build();
+            .statusEffect(new StatusEffectInstance(EffectsRegistry.NOURISHMENT.get(), ConsumableItem.LONG_DURATION, 0), 1.0F)
+            .recipeRemainder(Items.BOWL).build();
     public static final FoodComponent FRIED_EGGPLANT_PASTA = (new FoodComponent.Builder()).hunger(12).saturationModifier(0.9F)
             .statusEffect(new StatusEffectInstance(EffectsRegistry.NOURISHMENT.get(), ConsumableItem.LONG_DURATION, 0), 1.0F).build();
     public static final FoodComponent EGGPLANT_BURGER = (new FoodComponent.Builder()).hunger(12).saturationModifier(0.7F).build();
