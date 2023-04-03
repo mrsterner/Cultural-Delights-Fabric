@@ -18,6 +18,7 @@ import net.minecraft.block.SaplingBlock;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.StewItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
