@@ -21,6 +21,7 @@ import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
+import net.minecraft.world.WorldView;
 
 public class CornBlock extends PlantBlock implements Fertilizable {
     public static final IntProperty AGE;
@@ -85,7 +86,7 @@ public class CornBlock extends PlantBlock implements Fertilizable {
 
 
     @Override
-    public boolean canGrow(World world, Random random, BlockPos pos, BlockState state) {
+    public boolean isFertilizable(WorldView world, BlockPos pos, BlockState state, boolean isClient) {
         BlockState upperState = world.getBlockState(pos.up());
         if (upperState.getBlock() instanceof CornUpperBlock) {
             return !((CornUpperBlock)upperState.getBlock()).isMature(upperState);
@@ -95,7 +96,7 @@ public class CornBlock extends PlantBlock implements Fertilizable {
     }
 
     @Override
-    public boolean isFertilizable(BlockView world, BlockPos pos, BlockState state, boolean isClient) {
+    public boolean canGrow(World world, Random random, BlockPos pos, BlockState state) {
         BlockState upperState = world.getBlockState(pos.up());
         if (upperState.getBlock() instanceof CornUpperBlock) {
             return !((CornUpperBlock)upperState.getBlock()).isMature(upperState);
@@ -103,7 +104,6 @@ public class CornBlock extends PlantBlock implements Fertilizable {
             return true;
         }
     }
-
 
     protected int getBonemealAgeIncrease(World worldIn) {
         return MathHelper.nextInt(worldIn.random, 1, 4);

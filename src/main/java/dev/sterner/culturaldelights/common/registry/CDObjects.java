@@ -7,6 +7,7 @@ import dev.sterner.culturaldelights.common.block.*;
 import dev.sterner.culturaldelights.common.utils.Constants;
 import dev.sterner.culturaldelights.common.world.AvocadoPitGenerator;
 import dev.sterner.culturaldelights.common.world.AvocadoSaplingGenerator;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
@@ -18,8 +19,9 @@ import net.minecraft.block.SaplingBlock;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -113,7 +115,7 @@ public class CDObjects {
     public static final Item EGGPLANT_SEEDS = register("eggplant_seeds", new AliasedBlockItem(EGGPLANT_CROP, settings()));
 
     private static Item.Settings settings() {
-        return new Item.Settings().group(FarmersDelightMod.ITEM_GROUP);
+        return new Item.Settings();
     }
 
     private static <T extends Item> T register(String name, T item) {
@@ -130,8 +132,10 @@ public class CDObjects {
     }
 
     public static void init() {
-        BLOCKS.keySet().forEach(block -> Registry.register(Registry.BLOCK, BLOCKS.get(block), block));
-        ITEMS.keySet().forEach(item -> Registry.register(Registry.ITEM, ITEMS.get(item), item));
+        BLOCKS.keySet().forEach(block -> Registry.register(Registries.BLOCK, BLOCKS.get(block), block));
+        ITEMS.keySet().forEach(item -> Registry.register(Registries.ITEM, ITEMS.get(item), item));
+        ItemGroupEvents.modifyEntriesEvent(FarmersDelightMod.ITEM_GROUP).register(entries -> ITEMS.keySet().forEach(entries::add));
+
 
         FlammableBlockRegistry flammableRegistry = FlammableBlockRegistry.getDefaultInstance();
         flammableRegistry.add(AVOCADO_LEAVES, 30, 60);
