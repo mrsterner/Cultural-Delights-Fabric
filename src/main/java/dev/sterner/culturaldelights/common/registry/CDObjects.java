@@ -18,6 +18,7 @@ import net.minecraft.block.SaplingBlock;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.StewItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -56,15 +57,15 @@ public class CDObjects {
     public static final Item TORTILLA = register("tortilla", new Item(settings().food(CDFoodComponents.TORTILLA)));
     public static final Item TORTILLA_CHIPS = register("tortilla_chips", new Item(settings().food(CDFoodComponents.TORTILLA_CHIPS)));
     public static final Item ELOTE = register("elote", new Item(settings().food(CDFoodComponents.ELOTE)));
-    public static final Item HEARTY_SALAD = register("hearty_salad", new Item(settings().food(CDFoodComponents.HEARTY_SALAD)));
+    public static final Item HEARTY_SALAD = register("hearty_salad", new StewItem(settings().food(CDFoodComponents.HEARTY_SALAD)));
     public static final Item BEEF_BURRITO = register("beef_burrito", new Item(settings().food(CDFoodComponents.BEEF_BURRITO)));
     public static final Item MUTTON_SANDWICH = register("mutton_sandwich", new Item(settings().food(CDFoodComponents.MUTTON_SANDWICH)));
-    public static final Item FRIED_EGGPLANT_PASTA = register("fried_eggplant_pasta", new Item(settings().food(CDFoodComponents.FRIED_EGGPLANT_PASTA)));
+    public static final Item FRIED_EGGPLANT_PASTA = register("fried_eggplant_pasta", new StewItem(settings().food(CDFoodComponents.FRIED_EGGPLANT_PASTA)));
     public static final Item EGGPLANT_BURGER = register("eggplant_burger", new Item(settings().food(CDFoodComponents.EGGPLANT_BURGER)));
     public static final Item AVOCADO_TOAST = register("avocado_toast", new Item(settings().food(CDFoodComponents.AVOCADO_TOAST)));
-    public static final Item CREAMED_CORN = register("creamed_corn", new Item(settings().food(CDFoodComponents.CREAMED_CORN)));
+    public static final Item CREAMED_CORN = register("creamed_corn", new StewItem(settings().food(CDFoodComponents.CREAMED_CORN)));
     public static final Item CHICKEN_TACO = register("chicken_taco", new Item(settings().food(CDFoodComponents.CHICKEN_TACO)));
-    public static final Item SPICY_CURRY = register("spicy_curry", new Item(settings().food(CDFoodComponents.SPICY_CURRY)));
+    public static final Item SPICY_CURRY = register("spicy_curry", new StewItem(settings().food(CDFoodComponents.SPICY_CURRY)));
     public static final Item PORK_WRAP = register("pork_wrap", new Item(settings().food(CDFoodComponents.PORK_WRAP)));
     public static final Item FISH_TACO = register("fish_taco", new Item(settings().food(CDFoodComponents.FISH_TACO)));
     public static final Item MIDORI_ROLL = register("midori_roll", new Item(settings().food(CDFoodComponents.MIDORI_ROLL)));
