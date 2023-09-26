@@ -47,7 +47,7 @@ public class CulturalDelights implements ModInitializer {
 		CDWorldGenerators.init();
 
 		BiomeModifications.addFeature(context -> context.getBiomeKey().equals(BiomeKeys.PLAINS), GenerationStep.Feature.VEGETAL_DECORATION,
-				CDConfiguredFeatures.PATCH_WILD_CORNS.key());
+				CDConfiguredFeatures.PATCH_WILD_CORN.key());
 		BiomeModifications.addFeature(context -> context.getBiomeKey().equals(BiomeKeys.SWAMP), GenerationStep.Feature.VEGETAL_DECORATION,
 				CDConfiguredFeatures.PATCH_WILD_EGGPLANTS.key());
 		BiomeModifications.addFeature(context -> context.getBiomeKey().equals(BiomeKeys.SWAMP), GenerationStep.Feature.VEGETAL_DECORATION,
