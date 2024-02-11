@@ -15,6 +15,7 @@ repositories {
 		name "cloth config, rei"
 		url "https://maven.shedaniel.me"
 	}
+
 	maven {
 		name "terraform wood api, trinkets"
 		url "https://maven.terraformersmc.com"

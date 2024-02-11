@@ -11,10 +11,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.PillarBlock;
-import net.minecraft.block.SaplingBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -88,7 +85,7 @@ public class CDObjects {
 
     public static final Block AVOCADO_LOG = register("avocado_log", new PillarBlock(FabricBlockSettings.copy(Blocks.JUNGLE_LOG)), settings(), true);
     public static final Block AVOCADO_WOOD = register("avocado_wood", new PillarBlock(FabricBlockSettings.copy(Blocks.JUNGLE_WOOD)), settings(), true);
-    public static final Block AVOCADO_LEAVES = register("avocado_leaves", new PillarBlock(FabricBlockSettings.copy(Blocks.JUNGLE_LEAVES)), settings(), true);
+    public static final Block AVOCADO_LEAVES = register("avocado_leaves", new LeavesBlock(FabricBlockSettings.copy(Blocks.JUNGLE_LEAVES)), settings(), true);
 
     public static final Block AVOCADO_SAPLING = register("avocado_sapling", new SaplingBlock(new AvocadoSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING)), settings(), true);
 
