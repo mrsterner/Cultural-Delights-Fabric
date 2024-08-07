@@ -84,7 +84,7 @@ public class CDObjects {
 
 
     public static final Block FRUITING_AVOCADO_LEAVES = register("fruiting_avocado_leaves",
-            new FruitingLeaves(BlockBehaviour.Properties.copy(Blocks.JUNGLE_LEAVES)), settings(), false);
+            new FruitingLeaves(BlockBehaviour.Properties.copy(Blocks.JUNGLE_LEAVES)), settings(), true);
 
     public static final Block WILD_CUCUMBERS = register("wild_cucumbers", new WildCropBlock(MobEffects.DAMAGE_BOOST, 6, FabricBlockSettings.copyOf(Blocks.TALL_GRASS)), settings(), true);
     public static final Block WILD_CORN = register("wild_corn", new WildCropBlock(MobEffects.DAMAGE_BOOST, 6, FabricBlockSettings.copyOf(Blocks.TALL_GRASS)), settings(), true);
