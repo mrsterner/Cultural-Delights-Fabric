@@ -10,16 +10,16 @@
   "type": "brewinandchewin:fermenting",
   "ingredients": [
     {
-      "item": "c:foods/vegetables/cucumber"
+      "tag": "c:foods/vegetables/cucumber"
     },
     {
-      "item": "c:foods/vegetables/cucumber"
+      "tag": "c:foods/vegetables/cucumber"
     },
     {
-      "item": "c:foods/vegetables/cucumber"
+      "tag": "c:foods/vegetables/cucumber"
     },
     {
-      "item": "c:foods/vegetables/cucumber"
+      "tag": "c:foods/vegetables/cucumber"
     }
   ],
   "result": {
